@@ -435,4 +435,94 @@ input:focus,textarea:focus{
     box-shadow: 0 0 5px #a8bbe0;
 }
   
- 
+ footer{
+    height: 15rem;
+    width: 100%;
+    background-color: #9bb5fcea
+ }
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3)
+}
+
+.end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+}
+
+/* last effect */
+
+#text{
+    color: white;
+    font-size: 1.5rem;
+    font-family: "Space Mono", monospace;
+}
+#text:hover {
+    background-color: white;
+    color: black;
+    cursor: default;
+}
+
+
+
+/* Mouse Move Effect*/
+
+
+/* .dot {
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+}
+.fa-star{
+    font-size: 20px;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fall-1{
+    0%{
+        transform: translate(0px,0px) scale(1) rotate3d(0,0,0,0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(0px,20px) scale(.5) rotate3d(0.5,1,0,250deg);
+        opacity: 0;
+    }
+}
+@keyframes fall-2{
+    0%{
+        transform: translate(0px,0px) scale(1) rotate3d(0,0,0,0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(0px,20px) scale(.5) rotate3d(1,0,0.2,250deg);
+        opacity: 0;
+    }
+}
+@keyframes fall-3{
+    0%{
+        transform: translate(0px,0px) scale(1) rotate3d(0,0,0,0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(0px,20px) scale(.5) rotate3d(1.7,0.7,0.2,180deg);
+        opacity: 0;
+    }
+}
+
+
+.glow{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #ff0ddf;
+    box-shadow: 0 0 5px #ff0ddf;
+} */
