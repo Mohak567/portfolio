@@ -12,34 +12,49 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body>
+
+    <!-- PROGRESS_BAR -->
+    
+    <div id="progressBar"></div>
+    <div id="scrollPath"></div>
+     
+
+
     <!-- navigation bar -->
-    <header>
-      <nav class="nav">
-        <!-- Mohak's Portfolio -->
-        <div class="left">
-          <div id="logo">
-            <img src="/images/logo/m(green).svg" draggable="false">
-            <img src="/images/logo/m(blue).svg" draggable="false">
-            <img src="/images/logo/m(dark).svg" draggable="false">
-            <img src="/images/logo/m(orange).svg" draggable="false">
-            <img src="/images/logo/m(white).svg" draggable="false">
-        </div>
-        </div>
-          <div class="right">
-              <ul>
-                  <li><a class="menu_tag" href="/">HOME</a></li>
-                  <li><a class="menu_tag" href="/">ABOUT</a></li>
-                  <li><a class="menu_tag" href="/">PROJECTS</a></li>
-                  <li><a class="menu_tag" href="/">CONTACT ME</a></li>
-              </ul>
+    
+      <header>
+        <nav class="nav">
+          <!-- Mohak's Portfolio -->
+          <div class="left">
+            <div id="logo">
+              <img src="/images/logo/m(green).svg" draggable="false">
+              <img src="/images/logo/m(blue).svg" draggable="false">
+              <img src="/images/logo/m(dark).svg" draggable="false">
+              <img src="/images/logo/m(orange).svg" draggable="false">
+              <img src="/images/logo/m(white).svg" draggable="false">
           </div>
-      </nav>
-    </header>
+          </div>
+            <div class="right">
+                <ul>
+                    <li><a class="menu_tag active" href="#">HOME</a></li>
+                    <li><a class="menu_tag active" href="#about">ABOUT</a></li>
+                    <li><a class="menu_tag active" href="#projects">PROJECTS</a></li>
+                    <li><a class="menu_tag active" href="#contact">CONTACT ME</a></li>
+                </ul>
+            </div>
+        </nav>
+      </header>
+    
 
     <main>
-      <section class="firstSection">
+      <section class="firstSection" id="home">
         <div class="leftSection">
             <div class="text">
               Hi, My name is<span class="purple"> Mohak Khare</span>,
@@ -83,9 +98,9 @@
         <div class="rightSection"><img class="bg-img" src="images/bg.png" alt="bgImage"></div>
       </section>
 
-      <!-- skill section -->
+      <!-- skill/about section -->
 
-      <section class="section">
+      <section class="section" id="about">
 
         <div class="Box" style="font-size: 2rem;">
           <h1>Skills</h1>
@@ -169,7 +184,7 @@
             <div class="progressName">
 
               <span>Data Structures and Algorithms</span>
-              <span>50%</span>
+              <span>60%</span>
               
             </div>
             <div class="progress-container">
@@ -181,7 +196,20 @@
             <div class="progressName">
 
               <span>Object Oriented Programming</span>
-              <span>50%</span>
+              <span>60%</span>
+              
+            </div>
+            <div class="progress-container">
+              <div class="progress-bar" data-value="60"></div>
+            </div>
+          </div>
+
+
+          <div class="skillContainer">
+            <div class="progressName">
+
+              <span>SQL</span>
+              <span>60%</span>
               
             </div>
             <div class="progress-container">
@@ -194,7 +222,7 @@
       </section>
 
       <!-- PROJECTS section -->
-      <section class="section">
+      <section class="section" id="projects">
         <div class="Box">
           <h1 class="heading">Projects</h1>
         </div>
@@ -258,6 +286,7 @@
   <script src="type.js"></script>
   <script src="progressBar.js"></script>
   <script src="textEffect.js"></script>
+  <script src="scrollBar.js"></script>
   <!-- <script src="MMEffect.js"></script> -->
 
   </body>
