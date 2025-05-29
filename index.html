@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="shortcut icon" type="x-icon" href="/images/logo/m(white).svg">
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -69,22 +70,22 @@
             <div class="button">
               
               <div class="btnC">
-                <a href="#"><i class="fa-brands fa-linkedin sbtn"></i></a>
+                <a href="https://www.linkedin.com/in/mohak-khare-8222b3260"><i class="fa-brands fa-linkedin sbtn"></i></a>
               </div>
 
               <div class="btnC">
-                <a href="#"><i class="fa-brands fa-github sbtn"></i></a>
+                <a href="https://github.com/Mohak567"><i class="fa-brands fa-github sbtn"></i></a>
               </div>
 
               <div class="btnC">
-                <a href="#"><i class="fa-brands fa-instagram sbtn"></i></a>
+                <a href="https://www.instagram.com/mohakhare/"><i class="fa-brands fa-instagram sbtn"></i></a>
               </div>
 
             </div>
 
             <!-- resume -->
 
-            <a id="btnA" href="#" draggable="false">
+            <a id="btnA" href="MohakKhare.pdf" download draggable="false">
               <div class="resumeContainer">
                 <button class="btn">
                   Resume
@@ -102,7 +103,7 @@
 
       <section class="section" id="about">
 
-        <div class="Box" style="font-size: 2rem;">
+        <div class="Box" style="font-size: 2rem;margin-bottom: 4rem;">
           <h1>Skills</h1>
           <!-- <i class="fa-solid fa-wrench"></i>
           <i class="fa-solid fa-gear"></i> -->
@@ -230,18 +231,20 @@
         <div class="project-container">
           
           <div class="project">
-            <div class="glass">project1</div>
-            <img src="images/project/project1.png" alt="project1">
+            <div class="glass">Street Fighter</div>
+            <a href="https://github.com/Mohak567/Street-fighter-game">
+            <img src="images/project/project1.png" alt="project1"></a>
           </div>
 
           <div class="project">
-            <div class="glass">project2</div>
+            <div class="glass">E-commerce</div>
             <img src="images/project/project2.png" alt="project2">
           </div>
 
           <div class="project">
-            <div class="glass">project3</div>
-            <img src="images/project/project3.png" alt="project3">
+            <div class="glass">Parallax Effect</div>
+            <a href="https://github.com/Mohak567/Parallax-effect-website">
+            <img src="images/project/project3.png" alt="project3"></a>
           </div>
 
         </div>
@@ -259,11 +262,12 @@
           <div class="contact_container container">
             <div class="contact_content">
               <div class="inputs">
-                <input type="text" id="name" placeholder="Name" />
-                <input type="email" id="email_id" placeholder="Email" />
+                <input type="text" id="name" placeholder="Name" required/>
+                <input type="email" id="email_id" placeholder="Email" required/>
               </div>
-              <textarea id="message" placeholder="Message" cols="30" rows="10"></textarea>
-              <button onclick="sendMail(event)" class="btn" id="button">Send Mail</button>
+              <input type="text" id="subject" placeholder="Subject" required/>
+              <textarea id="message" required placeholder="Message" cols="30" rows="10"></textarea>
+              <button type="submit" onclick="sendMail()" class="btn" id="button">Send Mail</button>
             </div>
           </div>
         </section>
@@ -287,6 +291,17 @@
   <script src="progressBar.js"></script>
   <script src="textEffect.js"></script>
   <script src="scrollBar.js"></script>
+  <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init({
+          publicKey: "OFYKRRPLYw_Y4UPvs",
+        });
+    })();
+  </script>
+  <script src="emailFunctionality.js"></script>
   <!-- <script src="MMEffect.js"></script> -->
 
   </body>
