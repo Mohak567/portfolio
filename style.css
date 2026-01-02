@@ -72,7 +72,7 @@ header{
 .menu_tag:before{
     content: "";
     position: absolute;
-    background-color: red;
+    background-color: #90D5FF;
     height: 3px;
     width: 100%;
     left: 0;
@@ -88,7 +88,7 @@ header{
 
 
 .menu_tag:hover{
-    color: rgb(170, 107, 228);
+    color: #44b8ff;
 }
 
 /* .right{
@@ -280,6 +280,43 @@ header{
     margin-left: 0.5rem;
 }
 
+/* About */
+
+#aboutMe{
+    margin-left: 5rem;
+    width: 90%;
+    font-size: 1.8rem;
+    font-family: 'poppins';
+}
+
+.educationContainer{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#edu{
+    background-color: #a8bcfc;
+    height: 13rem;
+    width: 13rem;
+    color: #181c74;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px dashed black;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, font-weight 0.3s ease;
+}
+
+#edu:hover {
+  background-color: #181c74;
+  color: white;
+}
+
 
 /* skill */
 
@@ -458,7 +495,7 @@ input:focus,textarea:focus{
     justify-content: center;
     align-items: center;
     height: 10rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3)
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .end{
